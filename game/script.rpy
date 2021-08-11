@@ -144,7 +144,12 @@ label start:
 
     f smile "И-и-и-и-и-и-и-и-и-и-и… {w}Мы прибыли!"
 
+    jump meeting
+    return
+
     #конец 1 сцены
+
+label meeting:
 
     scene bg park with fade
 
@@ -272,7 +277,13 @@ label start:
 
     b "Предлагаю не обращать внимания и последовать примеру нашего нового знакомого и, наконец, осмотреться."
 
+    jump lookaround
+    return
+
     #Конец 2 сцены
+
+label lookaround:
+    
     scene bg road with fade
 
     show friend
@@ -287,24 +298,24 @@ label start:
     hide brother
     show friend
 
-    f question "На смотровую площадку. Это, типо, главная фишка этого фестиваля, разве я не говорил?" #ухмыляется
+    f question "На смотровую площадку. Это, типо, главная фишка этого фестиваля, разве я не говорил?" 
 
     hide friend
     show geroy
 
-    g smile "Видишь, не только у меня проблемы с памятью." #улыбается
+    g smile "Видишь, не только у меня проблемы с памятью." 
 
     hide geroy
     show girlfriend
 
-    gf happy "Это здорово! Виды дикой природы завораживают, жду не дождусь!" #восторг
+    gf happy "Это здорово! Виды дикой природы завораживают, жду не дождусь!" 
 
     hide girlfriend
     show brother
 
-    b smile "Вижу, ты полна энтузиазма, малыш. Мы пришли." #улыбается
+    b smile "Вижу, ты полна энтузиазма, малыш. Мы пришли." 
 
-    #конец сценки, переход на смотровую площадку
+    #конец сцены, переход на смотровую площадку
     scene bg viewpoint with fade
 
     a "Герои подошли к смотровой площадке. Все осматривают открывшийся пейзаж леса."
@@ -336,7 +347,7 @@ label start:
     hide geroy
     show friend
 
-    f smile "Надень пакет на голову." #ухмыляется
+    f smile "Надень пакет на голову." 
 
     hide friend
     show geroy
@@ -438,7 +449,11 @@ label start:
 
     f "Как скажешь, трусишка. Тогда погнали!"
 
+    jump darkness
+    return
     #конец сцены
+
+label darkness:
     scene bg park dark with fade
     play music mystic
     show friend
@@ -626,7 +641,12 @@ label start:
     g "*провожает незнакомца взглядом*"
     g stress "Это было странно. Думаю, я достаточно времени пробыла на стоянке. Вернусь к людям, заодно поищу этих двоих."
 
+    jump strangethings
+    return
+
     #конец 4 сцены
+
+label strangethings:
     scene bg crowded place with fade
 
     show geroy
@@ -635,7 +655,7 @@ label start:
     g "Даже если так, нашей парочки все равно не видать."
     g "Осмотрюсь немного, может замечу."
     g "..."
-    g stress "Что-то мне не нравится, что их дос сих пор не видно"
+    g stress "Что-то мне не нравится, что их до сих пор не видно"
 
     menu:
         "Искать дальше":
