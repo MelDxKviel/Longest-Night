@@ -2,3 +2,6 @@ log.txt
 traceback.txt
 errors.txt
 *.save
+*.rpyb
+/cache
+/saves
