@@ -3,5 +3,5 @@ traceback.txt
 errors.txt
 *.save
 *.rpyb
-/cache
-/saves
+/game/cache
+/game/saves
